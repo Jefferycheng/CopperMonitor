@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CopperMonitor.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+89d84f0e7133ca8f37ae7ebfb94ce6d74c685a5b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c25dbe24f42649d9d67ca34519052d1be7bb65c9")]
 [assembly: System.Reflection.AssemblyProductAttribute("CopperMonitor.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CopperMonitor.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
