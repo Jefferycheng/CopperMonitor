@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\CopperMonitor.Application\CopperMonitor.Application.csproj" />
+    <ProjectReference Include="..\CopperMonitor.Infrastructure\CopperMonitor.Infrastructure.csproj" />
+    <ProjectReference Include="..\CopperMonitor.Domain\CopperMonitor.Domain.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>

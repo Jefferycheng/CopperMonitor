@@ -1,4 +1,4 @@
-# uServeCore.CopperMonitor
+# CopperMonitor
 
 Automated copper price monitor. Every weekday at **08:30 Asia/Taipei** it builds a copper report
 (COMEX HG close, daily/weekly change %, USD/TWD, TWD/ton) and pushes it to a LINE group.
@@ -14,7 +14,7 @@ domain exceptions).
 ```bash
 export Line__ChannelAccessToken="<LINE Messaging API channel access token>"
 export Line__GroupId="<LINE group id, starts with C...>"
-dotnet run --project src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Api
+dotnet run --project src/CopperMonitor/CopperMonitor.Api
 ```
 
 Without the LINE env vars the API still works; only the push fails with `LineNotConfigured`.
