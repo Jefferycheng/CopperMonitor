@@ -19,6 +19,7 @@ builder.Services.AddMediatR(cfg =>
 // Application services
 builder.Services.AddScoped<CopperReportService>();
 builder.Services.AddScoped<ChatCommandService>();
+builder.Services.AddScoped<LineWebhookHandler>();
 
 // External services
 builder.Services.AddHttpClient<ICopperPriceProvider, YahooCopperPriceProvider>(ConfigureYahooClient);

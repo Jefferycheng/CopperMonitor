@@ -15,3 +15,4 @@
 /Users/jeffery/RiderProjects/CopperMonitor/src/CopperMonitor/CopperMonitor.Infrastructure/obj/Debug/net10.0/refint/CopperMonitor.Infrastructure.dll
 /Users/jeffery/RiderProjects/CopperMonitor/src/CopperMonitor/CopperMonitor.Infrastructure/obj/Debug/net10.0/CopperMonitor.Infrastructure.pdb
 /Users/jeffery/RiderProjects/CopperMonitor/src/CopperMonitor/CopperMonitor.Infrastructure/obj/Debug/net10.0/ref/CopperMonitor.Infrastructure.dll
+/Users/jeffery/RiderProjects/CopperMonitor/src/CopperMonitor/CopperMonitor.Infrastructure/obj/Debug/net10.0/CopperMonitor.Infrastructure.sourcelink.json

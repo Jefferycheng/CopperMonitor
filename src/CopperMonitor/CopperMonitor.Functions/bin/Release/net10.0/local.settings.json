@@ -1,0 +1,12 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "ReportScheduleCron": "0 30 0 * * 1-5",
+    "Alert__DailyChangeThresholdPercent": "3",
+    "Alert__WeeklyChangeThresholdPercent": "5",
+    "Line__ChannelAccessToken": "",
+    "Line__GroupId": ""
+  }
+}

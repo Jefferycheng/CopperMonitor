@@ -10,3 +10,4 @@
 /Users/jeffery/RiderProjects/CopperMonitor/src/CopperMonitor/CopperMonitor.Domain/obj/Debug/net10.0/refint/CopperMonitor.Domain.dll
 /Users/jeffery/RiderProjects/CopperMonitor/src/CopperMonitor/CopperMonitor.Domain/obj/Debug/net10.0/CopperMonitor.Domain.pdb
 /Users/jeffery/RiderProjects/CopperMonitor/src/CopperMonitor/CopperMonitor.Domain/obj/Debug/net10.0/ref/CopperMonitor.Domain.dll
+/Users/jeffery/RiderProjects/CopperMonitor/src/CopperMonitor/CopperMonitor.Domain/obj/Debug/net10.0/CopperMonitor.Domain.sourcelink.json

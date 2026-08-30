@@ -40,6 +40,31 @@ Without the LINE env vars the API still works; only the push fails with `LineNot
 - FX: Yahoo Finance `TWD=X` (USD/TWD).
 - TWD/ton = USD/lb × 2204.62262 × USD/TWD.
 
+## Deploy to Azure Functions (Flex Consumption, free grant)
+
+The `CopperMonitor.Functions` project hosts the same Application/Infrastructure code as serverless functions:
+
+- `DailyCopperReport` — TimerTrigger `%ReportScheduleCron%`, default `0 30 0 * * 1-5` (00:30 UTC = 08:30 Asia/Taipei weekdays; Taiwan has no DST).
+- `GET  /api/v1/copper-price/report`, `GET /api/v1/copper-price/history` — anonymous.
+- `POST /api/v1/copper-price/report/send` — function-key protected.
+- `POST /api/v1/line/webhook` — anonymous (set this URL in the LINE Developers Console).
+
+Create the Function App (portal: hosting option **Flex Consumption**, runtime **.NET 10 Isolated**), then:
+
+```bash
+cd src/CopperMonitor/CopperMonitor.Functions
+dotnet publish -c Release -o ./publish
+cd publish && zip -r ../app.zip . && cd ..
+az functionapp deployment source config-zip -g <resource-group> -n <function-app-name> --src app.zip
+
+az functionapp config appsettings set -g <resource-group> -n <function-app-name> --settings \
+  ReportScheduleCron="0 30 0 * * 1-5" \
+  Line__ChannelAccessToken="<token>" \
+  Line__GroupId="<C... group id>" \
+  Alert__DailyChangeThresholdPercent=3 \
+  Alert__WeeklyChangeThresholdPercent=5
+```
+
 ## Notes
 
 - Daily change compares the latest close with the previous trading day; weekly change compares with the most recent trading day on/before 7 calendar days earlier.

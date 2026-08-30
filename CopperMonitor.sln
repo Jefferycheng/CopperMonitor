@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopperMonitor.Infrastructur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopperMonitor.Api", "src\CopperMonitor\CopperMonitor.Api\CopperMonitor.Api.csproj", "{0FB40794-45BB-4516-9922-EEC97326C66C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopperMonitor.Functions", "src\CopperMonitor\CopperMonitor.Functions\CopperMonitor.Functions.csproj", "{C0535128-C149-4563-A6C6-7F17B05549AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +75,18 @@ Global
 		{0FB40794-45BB-4516-9922-EEC97326C66C}.Release|x64.Build.0 = Release|Any CPU
 		{0FB40794-45BB-4516-9922-EEC97326C66C}.Release|x86.ActiveCfg = Release|Any CPU
 		{0FB40794-45BB-4516-9922-EEC97326C66C}.Release|x86.Build.0 = Release|Any CPU
+		{C0535128-C149-4563-A6C6-7F17B05549AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0535128-C149-4563-A6C6-7F17B05549AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0535128-C149-4563-A6C6-7F17B05549AC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C0535128-C149-4563-A6C6-7F17B05549AC}.Debug|x64.Build.0 = Debug|Any CPU
+		{C0535128-C149-4563-A6C6-7F17B05549AC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C0535128-C149-4563-A6C6-7F17B05549AC}.Debug|x86.Build.0 = Debug|Any CPU
+		{C0535128-C149-4563-A6C6-7F17B05549AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0535128-C149-4563-A6C6-7F17B05549AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0535128-C149-4563-A6C6-7F17B05549AC}.Release|x64.ActiveCfg = Release|Any CPU
+		{C0535128-C149-4563-A6C6-7F17B05549AC}.Release|x64.Build.0 = Release|Any CPU
+		{C0535128-C149-4563-A6C6-7F17B05549AC}.Release|x86.ActiveCfg = Release|Any CPU
+		{C0535128-C149-4563-A6C6-7F17B05549AC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,5 +97,6 @@ Global
 		{C26C0C24-BBBE-4EF3-B33F-ABE53C18ECF8} = {EA428946-22B6-173D-3AE9-7A340D245231}
 		{DECC1EE2-29CC-4B16-9645-AC0C35317344} = {EA428946-22B6-173D-3AE9-7A340D245231}
 		{0FB40794-45BB-4516-9922-EEC97326C66C} = {EA428946-22B6-173D-3AE9-7A340D245231}
+		{C0535128-C149-4563-A6C6-7F17B05549AC} = {EA428946-22B6-173D-3AE9-7A340D245231}
 	EndGlobalSection
 EndGlobal

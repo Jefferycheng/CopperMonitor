@@ -36,3 +36,4 @@
 /Users/jeffery/RiderProjects/CopperMonitor/src/CopperMonitor/CopperMonitor.Api/obj/Debug/net10.0/CopperMonitor.Api.pdb
 /Users/jeffery/RiderProjects/CopperMonitor/src/CopperMonitor/CopperMonitor.Api/obj/Debug/net10.0/CopperMonitor.Api.genruntimeconfig.cache
 /Users/jeffery/RiderProjects/CopperMonitor/src/CopperMonitor/CopperMonitor.Api/obj/Debug/net10.0/ref/CopperMonitor.Api.dll
+/Users/jeffery/RiderProjects/CopperMonitor/src/CopperMonitor/CopperMonitor.Api/obj/Debug/net10.0/CopperMonitor.Api.sourcelink.json
