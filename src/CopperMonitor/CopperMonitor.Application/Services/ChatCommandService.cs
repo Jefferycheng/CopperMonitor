@@ -9,9 +9,10 @@ namespace CopperMonitor.Application.Services;
 
 /// <summary>
 /// Turns a chat message into a copper report reply.
-///   "today" / "報告"            → today's full report
-///   "2026-08-27"                → that day's price
-///   "2026-08-01 2026-08-28"     → range summary (also accepts ~ or 到 as separator)
+///   "today" / "今天" / "今日" / "報告"  → today's full report
+///   "2026-08-27" or "0827"             → that day's price
+///   "2026-08-01 2026-08-28"            → range summary (also accepts ~ or 到 as separator)
+///   "0821-0830"                        → same range in the current year (MMdd shorthand)
 /// Returns null for anything else so normal group chatter is ignored.
 /// </summary>
 public partial class ChatCommandService(ISender sender)
@@ -19,7 +20,10 @@ public partial class ChatCommandService(ISender sender)
     [GeneratedRegex(@"\d{4}[-/]\d{1,2}[-/]\d{1,2}")]
     private static partial Regex DateTokenRegex();
 
-    private static readonly string[] TodayKeywords = ["today", "今天", "report", "報告", "銅價"];
+    [GeneratedRegex(@"^(\d{4})(?:\s*[-~到\s]\s*(\d{4}))?$")]
+    private static partial Regex ShortDateRegex();
+
+    private static readonly string[] TodayKeywords = ["today", "今天", "今日", "report", "報告", "銅價"];
 
     public async Task<string?> TryHandleAsync(string text, CancellationToken ct = default)
     {
@@ -37,12 +41,39 @@ public partial class ChatCommandService(ISender sender)
             .Select(d => d!.Value)
             .ToList();
 
+        // MMdd shorthand ("0827" or "0821-0830") — interpreted in the current year, Taipei time.
+        if (dates.Count == 0 && ShortDateRegex().Match(trimmed) is { Success: true } shortMatch)
+        {
+            var year = DateOnly.FromDateTime(DateTime.UtcNow.AddHours(8)).Year;
+            if (TryParseMonthDay(shortMatch.Groups[1].Value, year, out var first))
+            {
+                dates.Add(first);
+                if (shortMatch.Groups[2].Success)
+                {
+                    if (TryParseMonthDay(shortMatch.Groups[2].Value, year, out var second))
+                        dates.Add(second);
+                    else
+                        dates.Clear(); // "0821-9999" — not a date range, ignore entirely
+                }
+            }
+        }
+
         return dates.Count switch
         {
             1 => await HistoryReplyAsync(dates[0], dates[0], ct),
             2 => await HistoryReplyAsync(dates.Min(), dates.Max(), ct),
             _ => null
         };
+    }
+
+    private static bool TryParseMonthDay(string mmdd, int year, out DateOnly date)
+    {
+        date = default;
+        var month = int.Parse(mmdd[..2], CultureInfo.InvariantCulture);
+        var day = int.Parse(mmdd[2..], CultureInfo.InvariantCulture);
+        if (month is < 1 or > 12 || day < 1 || day > DateTime.DaysInMonth(year, month)) return false;
+        date = new DateOnly(year, month, day);
+        return true;
     }
 
     private async Task<string> HistoryReplyAsync(DateOnly from, DateOnly to, CancellationToken ct)
