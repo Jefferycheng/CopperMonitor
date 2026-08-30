@@ -1,0 +1,17 @@
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/bin/Debug/net10.0/uServeCore.CopperMonitor.Infrastructure.deps.json
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/bin/Debug/net10.0/uServeCore.CopperMonitor.Infrastructure.dll
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/bin/Debug/net10.0/uServeCore.CopperMonitor.Infrastructure.pdb
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/bin/Debug/net10.0/uServeCore.CopperMonitor.Application.dll
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/bin/Debug/net10.0/uServeCore.CopperMonitor.Domain.dll
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/bin/Debug/net10.0/uServeCore.CopperMonitor.Application.pdb
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/bin/Debug/net10.0/uServeCore.CopperMonitor.Domain.pdb
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/obj/Debug/net10.0/uServeCore.CopperMonitor.Infrastructure.csproj.AssemblyReference.cache
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/obj/Debug/net10.0/uServeCore.CopperMonitor.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/obj/Debug/net10.0/uServeCore.CopperMonitor.Infrastructure.AssemblyInfoInputs.cache
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/obj/Debug/net10.0/uServeCore.CopperMonitor.Infrastructure.AssemblyInfo.cs
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/obj/Debug/net10.0/uServeCore.CopperMonitor.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/obj/Debug/net10.0/uServeCo.C2EA3E59.Up2Date
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/obj/Debug/net10.0/uServeCore.CopperMonitor.Infrastructure.dll
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/obj/Debug/net10.0/refint/uServeCore.CopperMonitor.Infrastructure.dll
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/obj/Debug/net10.0/uServeCore.CopperMonitor.Infrastructure.pdb
+/Users/jeffery/RiderProjects/uServeCore.CopperMonitor/src/ServeCore.CopperMonitor/uServeCore.CopperMonitor.Infrastructure/obj/Debug/net10.0/ref/uServeCore.CopperMonitor.Infrastructure.dll
